@@ -21,7 +21,7 @@ class MinfinLogin extends StatefulWidget {
 
 class _MinfinLoginState extends State<MinfinLogin> {
   final dio = Dio();
-  var status = EnumStatus.loading;
+  var status = _EnumStatus.loading;
 
   @override
   void initState() {
@@ -31,19 +31,19 @@ class _MinfinLoginState extends State<MinfinLogin> {
 
   Future<void> load() async {
     if (await InternetConnectionChecker().hasConnection) {
-      setState(() => status = EnumStatus.loading);
+      setState(() => status = _EnumStatus.loading);
       try {
         final response = await dio.get("http://ip-api.com/json/");
         if (response.data["countryCode"] == "UZ") {
-          setState(() => status = EnumStatus.widgetUzb);
+          setState(() => status = _EnumStatus.widgetUzb);
         } else {
-          setState(() => status = EnumStatus.widgetOther);
+          setState(() => status = _EnumStatus.widgetOther);
         }
       } catch (_) {
-        setState(() => status = EnumStatus.fail);
+        setState(() => status = _EnumStatus.fail);
       }
     } else {
-      setState(() => status = EnumStatus.fail);
+      setState(() => status = _EnumStatus.fail);
     }
   }
 
@@ -52,10 +52,10 @@ class _MinfinLoginState extends State<MinfinLogin> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Builder(builder: (context) {
-        if (status == EnumStatus.loading) {
+        if (status == _EnumStatus.loading) {
           return const Center(child: CircularProgressIndicator());
         }
-        if (status == EnumStatus.fail) {
+        if (status == _EnumStatus.fail) {
           return Center(
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -76,11 +76,11 @@ class _MinfinLoginState extends State<MinfinLogin> {
             ),
           );
         }
-        if (status == EnumStatus.widgetUzb) return widget.widgetUzb;
+        if (status == _EnumStatus.widgetUzb) return widget.widgetUzb;
         return OtherCountry(onLogin: widget.onTestLogin);
       }),
     );
   }
 }
 
-enum EnumStatus { fail, loading, widgetUzb, widgetOther }
+enum _EnumStatus { fail, loading, widgetUzb, widgetOther }
