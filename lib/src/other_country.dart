@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class OtherCountry extends StatefulWidget {
-  final Function()? onLogin;
+  final Function(String login, String password)? onLogin;
 
   const OtherCountry({Key? key, this.onLogin}) : super(key: key);
 
@@ -58,7 +58,10 @@ class _OtherCountryState extends State<OtherCountry> {
               ),
               const SizedBox(height: kToolbarHeight),
               GestureDetector(
-                onTap: widget.onLogin,
+                onTap: () => widget.onLogin?.call(
+                  controllerLogin.text,
+                  controllerPassword.text,
+                ),
                 behavior: HitTestBehavior.opaque,
                 child: Container(
                   padding: const EdgeInsets.symmetric(

@@ -6,7 +6,7 @@ import 'other_country.dart';
 class MinfinLogin extends StatefulWidget {
   final bool? isUzb;
   final Widget widgetUzb;
-  final Function() onTestLogin;
+  final Function(String login, String password) onTestLogin;
 
   const MinfinLogin({
     Key? key,
