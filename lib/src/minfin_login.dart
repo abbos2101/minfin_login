@@ -8,12 +8,31 @@ class MinfinLogin extends StatefulWidget {
   final Widget widgetUzb;
   final Function(String login, String password) onTestLogin;
 
-  const MinfinLogin({
+  const MinfinLogin._({
     Key? key,
     this.isUzb,
     required this.widgetUzb,
     required this.onTestLogin,
   }) : super(key: key);
+
+  static MinfinLogin? _instance;
+
+  static void ensureInitialized({
+    bool? isUzb,
+    required Widget widgetUzb,
+    required Function(String login, String password) onTestLogin,
+  }) {
+    _instance = MinfinLogin._(
+      isUzb: isUzb,
+      widgetUzb: widgetUzb,
+      onTestLogin: onTestLogin,
+    );
+  }
+
+  static MinfinLogin getInstance() {
+    if (_instance != null) return _instance!;
+    throw "MinfinOneIDPage ensureInitialized qilinmagan";
+  }
 
   @override
   State<MinfinLogin> createState() => _MinfinLoginState();
@@ -30,6 +49,14 @@ class _MinfinLoginState extends State<MinfinLogin> {
   }
 
   Future<void> load() async {
+    if (widget.isUzb != null) {
+      if (widget.isUzb!) {
+        setState(() => status = _EnumStatus.widgetUzb);
+      } else {
+        setState(() => status = _EnumStatus.widgetOther);
+      }
+      return;
+    }
     if (await InternetConnectionChecker().hasConnection) {
       setState(() => status = _EnumStatus.loading);
       try {
