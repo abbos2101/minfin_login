@@ -1,6 +1,6 @@
 name: minfin_login
 description: Minfin proyektlarida O'zbekiston yoki chet eldan kirishni ajratishni bilish uchun kerak
-version: 0.0.8
+version: 0.0.9
 homepage: https://github.com/abbos2101/minfin_login
 
 environment:
