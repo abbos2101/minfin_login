@@ -6,7 +6,8 @@
 
 Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga kirganda foydalabuvchi IP manzili orqali agar O'zbekistonda bo'lsa boshqa page agar boshqa davlat bo'lsa boshqa page chiqariladigan qilingan.
 
-![DEMO](flutter_rating_bar.gif) 
+![DEMO](git_assets/img_uzb.PNG)
+![DEMO](git_assets/img_uzb.PNG) 
 
 ## Salient Features
 - Set minimum and maximum rating
