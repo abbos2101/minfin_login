@@ -1,4 +1,5 @@
-[![Pub](https://img.shields.io/pub/v/minfin_login.svg)](https://pub.dartlang.org/packages/minfin_login) 
+[![Pub](https://img.shields.io/pub/v/minfin_login.svg)](https://pub.dartlang.org/packages/minfin_login)
+[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/abbos2101/minfin_login/blob/main/LICENSE)
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/abbos2101/minfin_login.svg)](https://github.com/abbos2101/minfin_login)
 [![GitHub stars](https://img.shields.io/github/stars/abbos2101/minfin_login.svg?style=social)](https://github.com/abbos2101/minfin_login)
 
