@@ -1,4 +1,8 @@
-## 0.0.8
+## 1.0.0
+
+* Stable versiya
+
+## 0.0.9
 
 * Dokumentatsiyalar yangilandi, testga tayyor
 
