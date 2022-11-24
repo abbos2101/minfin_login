@@ -1,10 +1,6 @@
-![FLUTTER RATING BAR](rating_bar_banner.png)
-
-[![Pub](https://img.shields.io/pub/v/flutter_rating_bar.svg)](https://pub.dartlang.org/packages/flutter_rating_bar) 
-[![License](https://img.shields.io/badge/licence-MIT-orange.svg)](https://github.com/sarbagyastha/flutter_rating_bar/blob/master/LICENSE)
-[![Web Demo](https://img.shields.io/badge/Web-Demo-blueviolet.svg)](https://sarbagyastha.com.np/flutter_rating_bar/)
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/sarbagyastha/flutter_rating_bar.svg)](https://github.com/sarbagyastha/flutter_rating_bar) 
-[![GitHub stars](https://img.shields.io/github/stars/sarbagyastha/flutter_rating_bar.svg?style=social)](https://github.com/sarbagyastha/flutter_rating_bar)
+[![Pub](https://img.shields.io/pub/v/minfin_login.svg)](https://pub.dartlang.org/packages/minfin_login) 
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/abbos2101/minfin_login.svg)](https://github.com/abbos2101/minfin_login)
+[![GitHub stars](https://img.shields.io/github/stars/abbos2101/minfin_login.svg?style=social)](https://github.com/abbos2101/minfin_login)
 
 
 A simple yet fully customizable rating bar for flutter which also include a rating bar indicator, supporting any fraction of rating.
