@@ -3,7 +3,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/abbos2101/minfin_login.svg?style=social)](https://github.com/abbos2101/minfin_login)
 
 
-A simple yet fully customizable rating bar for flutter which also include a rating bar indicator, supporting any fraction of rating.
+Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga kirganda foydalabuvchi IP manzili orqali agar O'zbekistonda bo'lsa boshqa page agar boshqa davlat bo'lsa boshqa page chiqariladigan qilingan.
 
 ![DEMO](flutter_rating_bar.gif) 
 
@@ -140,7 +140,7 @@ Feel Free to request any missing features or report issues [here](https://github
 ## License
 
 ```
-Copyright (c) 2021 Sarbagya Dhaubanjar
+Copyright (c) 2022 Bobomurodov Abbos
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
