@@ -5,13 +5,13 @@ import 'other_country.dart';
 
 class MinfinLogin extends StatefulWidget {
   final bool? isUzb;
-  final Widget widgetUzb;
+  final WidgetBuilder builderUzb;
   final Function(String login, String password) onTestLogin;
 
   const MinfinLogin._({
     Key? key,
     this.isUzb,
-    required this.widgetUzb,
+    required this.builderUzb,
     required this.onTestLogin,
   }) : super(key: key);
 
@@ -19,12 +19,12 @@ class MinfinLogin extends StatefulWidget {
 
   static void ensureInitialized({
     bool? isUzb,
-    required Widget widgetUzb,
+    required WidgetBuilder builderUzb,
     required Function(String login, String password) onTestLogin,
   }) {
     _instance = MinfinLogin._(
       isUzb: isUzb,
-      widgetUzb: widgetUzb,
+      builderUzb: builderUzb,
       onTestLogin: onTestLogin,
     );
   }
@@ -103,7 +103,9 @@ class _MinfinLoginState extends State<MinfinLogin> {
             ),
           );
         }
-        if (status == _EnumStatus.widgetUzb) return widget.widgetUzb;
+        if (status == _EnumStatus.widgetUzb) {
+          return Builder(builder: widget.builderUzb);
+        }
         return OtherCountry(onLogin: widget.onTestLogin);
       }),
     );
