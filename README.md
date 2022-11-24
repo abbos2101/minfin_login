@@ -23,35 +23,27 @@ Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga ki
 
 
 ## Ishlatilishi
-
-#### Using Flutter Rating Bar
-Rating Bar can be used in three ways.
-
-###### First Way:
-Using `RatingBar.builder()`
-
-![First Way](images/mode1.jpg) 
+Kodning birinchi qismida ensureInitialized qilib olish kerak.
 ```dart
-RatingBar.builder(
-   initialRating: 3,
-   minRating: 1,
-   direction: Axis.horizontal,
-   allowHalfRating: true,
-   itemCount: 5,
-   itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
-   itemBuilder: (context, _) => Icon(
-     Icons.star,
-     color: Colors.amber,
-   ),
-   onRatingUpdate: (rating) {
-     print(rating);
-   },
+MinfinLogin.ensureInitialized(
+    builderUzb: (context) {
+      return const Scaffold(body: Center(child: Text("UZB")));
+    },
+    onTestLogin: (login, password) async {
+      //Play market uchun berilgan test user login paroliga tekshilib
+      //keyingi qadamlar amalga oshiriladi
+    },
+  );
+```
+MinfinLoginni chaqiradigan qismda quyidagigacha ishlatiladi
+```
+Navigator.push(
+    context,
+    CupertinoPageRoute(builder: (context) => MinfinLogin.getInstance()),
 );
 ```
 
 ## License
-https://raw.githubusercontent.com/abbos2101/minfin_login/main/LICENSE
-
 ```
 Copyright (c) 2022 Bobomurodov Abbos
 
