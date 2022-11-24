@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 
-class TestPage extends StatefulWidget {
-  const TestPage({Key? key}) : super(key: key);
-
-  @override
-  State<TestPage> createState() => _TestPageState();
+void main() async {
+  runApp(const MyApp());
 }
 
-class _TestPageState extends State<TestPage> {
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      title: 'Minfin Login',
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(),
+    );
   }
 }
