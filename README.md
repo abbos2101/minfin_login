@@ -9,14 +9,14 @@ Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga ki
 <table>
    <tr>
       <td align="center">
-         <a href="git_assets/img_uz.PNG">O'zbekistonda</a>
+         <a href="https://raw.githubusercontent.com/abbos2101/minfin_login/main/git_assets/img_uz.PNG">O'zbekistonda</a>
          <br>
-         <img src="git_assets/img_uz.PNG"  width="200"/>
+         <img src="https://raw.githubusercontent.com/abbos2101/minfin_login/main/git_assets/img_uz.PNG"  width="200"/>
       </td>
       <td align="center">
-         <a href="git_assets/img_other.PNG">Boshqa davlatlarda</a>
+         <a href="https://raw.githubusercontent.com/abbos2101/minfin_login/main/git_assets/img_other.PNG">Boshqa davlatlarda</a>
          <br>
-         <img src="git_assets/img_other.PNG"  width="200"/>
+         <img src="https://raw.githubusercontent.com/abbos2101/minfin_login/main/git_assets/img_other.PNG"  width="200"/>
       </td>
     </tr>
  </table>
