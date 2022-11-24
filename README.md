@@ -6,8 +6,8 @@
 
 Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga kirganda foydalabuvchi IP manzili orqali agar O'zbekistonda bo'lsa boshqa page agar boshqa davlat bo'lsa boshqa page chiqariladigan qilingan.
 
-![DEMO](git_assets/img_uzb.PNG)
-![DEMO](git_assets/img_uzb.PNG) 
+![DEMO](git_assets/img_uz.PNG)
+![DEMO](git_assets/img_other.PNG) 
 
 ## Salient Features
 - Set minimum and maximum rating
