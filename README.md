@@ -6,20 +6,23 @@
 
 Ushbu package Play Market uchun maxsus tayyorlandi. Dasturning kirish qismiga kirganda foydalabuvchi IP manzili orqali agar O'zbekistonda bo'lsa boshqa page agar boshqa davlat bo'lsa boshqa page chiqariladigan qilingan.
 
-![DEMO](flutter_rating_bar.gif) 
+<table>
+   <tr>
+      <td align="center">
+         <a href="git_assets/img_uz.PNG">O'zbekistonda</a>
+         <br>
+         <img src="git_assets/img_uz.PNG"  width="200"/>
+      </td>
+      <td align="center">
+         <a href="git_assets/img_other.PNG">Boshqa davlatlarda</a>
+         <br>
+         <img src="git_assets/img_other.PNG"  width="200"/>
+      </td>
+    </tr>
+ </table>
 
-## Salient Features
-- Set minimum and maximum rating
-- Any widgets can be used as as rating bar/indicator items
-- Different widgets can be used in same rating bar as per position
-- Supports vertical layout
-- Glows on interaction
-- Supports RTL mode
 
-#### [Web Demo](https://sarbagyastha.com.np/flutter_rating_bar/)
-
-
-## Usage
+## Ishlatilishi
 
 #### Using Flutter Rating Bar
 Rating Bar can be used in three ways.
@@ -46,99 +49,8 @@ RatingBar.builder(
 );
 ```
 
-###### Second Way:
-Using `RatingBar()`
-
-![Second Way](images/mode2.jpg) 
-```dart
-RatingBar(
-   initialRating: 3,
-   direction: Axis.horizontal,
-   allowHalfRating: true,
-   itemCount: 5,
-   ratingWidget: RatingWidget(
-     full: _image('assets/heart.png'),
-     half: _image('assets/heart_half.png'),
-     empty: _image('assets/heart_border.png'),
-   ),
-   itemPadding: EdgeInsets.symmetric(horizontal: 4.0),
-   onRatingUpdate: (rating) {
-     print(rating);
-   },
-);
-```
-Heart Icons are [Available Here](https://github.com/sarbagyastha/flutter_rating_bar/tree/master/example/assets).
-
-###### Third Way:
-Using `RatingBar.builder()` with index
-
-![Third Way](images/mode3.jpg) 
-```dart
-RatingBar.builder(
-    initialRating: 3,
-    itemCount: 5,
-    itemBuilder: (context, index) {
-       switch (index) {
-          case 0:
-             return Icon(
-                Icons.sentiment_very_dissatisfied,
-                color: Colors.red,
-             );
-          case 1:
-             return Icon(
-                Icons.sentiment_dissatisfied,
-                color: Colors.redAccent,
-             );
-          case 2:
-             return Icon(
-                Icons.sentiment_neutral,
-                color: Colors.amber,
-             );
-          case 3:
-             return Icon(
-                Icons.sentiment_satisfied,
-                color: Colors.lightGreen,
-             );
-          case 4:
-              return Icon(
-                Icons.sentiment_very_satisfied,
-                color: Colors.green,
-              );
-       }
-    },
-    onRatingUpdate: (rating) {
-      print(rating);
-    },
-;
-```
-
-#### Using Flutter Rating Bar Indicator
-
-![Indicator](images/indicator.jpg) 
-```dart
-RatingBarIndicator(
-    rating: 2.75,
-    itemBuilder: (context, index) => Icon(
-         Icons.star,
-         color: Colors.amber,
-    ),
-    itemCount: 5,
-    itemSize: 50.0,
-    direction: Axis.vertical,
-),
-```
-
-#### Vertical Mode
-![Vertical](images/vertical.jpg) 
-
-In order to make the indicator scrollable, just use 'physics' property as in the [example](https://github.com/sarbagyastha/flutter_rating_bar/blob/master/example/lib/main.dart).
-
-## Info
-To know more about the available properties, head on to [api docs](https://pub.dartlang.org/documentation/flutter_rating_bar/latest/flutter_rating_bar/flutter_rating_bar-library.html).
-
-Feel Free to request any missing features or report issues [here](https://github.com/sarbagyastha/flutter_rating_bar/issues).
-
 ## License
+https://raw.githubusercontent.com/abbos2101/minfin_login/main/LICENSE
 
 ```
 Copyright (c) 2022 Bobomurodov Abbos
